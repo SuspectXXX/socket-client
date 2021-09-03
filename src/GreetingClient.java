@@ -36,6 +36,10 @@ public class GreetingClient {
                 String description = dataInputStream.readUTF();
 
                 System.out.println(description);
+
+                System.out.println("是否继续？（Y/N）");
+                String next = sc.nextLine();
+                if("N".equalsIgnoreCase(next)) flag = false;
             }
 
 
