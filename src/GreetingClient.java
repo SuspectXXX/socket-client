@@ -22,9 +22,9 @@ public class GreetingClient {
 
             Scanner sc = new Scanner(System.in);
 
-            boolean flag = false;
+            boolean flag = true;
 
-            while(!flag) {
+            while(flag) {
                 System.out.print("名字：");
                 String name = sc.nextLine();
                 System.out.print("家乡：");
@@ -36,13 +36,6 @@ public class GreetingClient {
                 String description = dataInputStream.readUTF();
 
                 System.out.println(description);
-
-                System.out.println("继续输入？（Y/N）");
-                String next = sc.next();
-                if(next.equalsIgnoreCase("N")) {
-                    flag = true;
-                }
-
             }
 
 
